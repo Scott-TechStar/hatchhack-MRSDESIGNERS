@@ -4,13 +4,20 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "node_1": "nodemon --watch dev -e js dev/networkNode.js 5001 http://localhost:5001",
+    "node_2": "nodemon --watch dev -e js dev/networkNode.js 5002 http://localhost:5002",
+    "node_3": "nodemon --watch dev -e js dev/networkNode.js 5003 http://localhost:5003",
+    "node_4": "nodemon --watch dev -e js dev/networkNode.js 5004 http://localhost:5004",
+    "node_5": "nodemon --watch dev -e js dev/networkNode.js 5005 http://localhost:5005"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
     "nodemon": "^1.19.3",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4",
     "sha256": "^0.2.0",
     "uuid": "^3.3.3"
   }
