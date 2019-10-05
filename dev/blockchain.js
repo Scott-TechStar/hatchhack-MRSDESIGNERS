@@ -34,7 +34,7 @@ Blockchain.prototype.createNewRecord = function(patientName ,docName , comments 
   const newRecord = {
     patientName: patientName,
     docName: docName,
-    comment: comments
+    comment: comments,
     RecordId:uuid().split('-').join('')
   }; // creates new transaction and pushes it to pending transactions
 
@@ -42,7 +42,7 @@ Blockchain.prototype.createNewRecord = function(patientName ,docName , comments 
 };
 
 
-Blockchain.prototype.addReToPendingRe = function(transactionObj){
+Blockchain.prototype.addToPendingRecord = function(transactionObj){
   this.pendingRecord.push(transactionObj);
   return this.getLastBlock()['index'] + 1;
 };

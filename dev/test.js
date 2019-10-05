@@ -1,5 +1,5 @@
 const Blockchain = require('./blockchain');
-const bitcoin = new Blockchain();
+const patient = new Blockchain();
 
 
 const previousBlockHash = 'KJKHJKHSDFHJHJHSJK';
@@ -20,4 +20,5 @@ const currentBlockData = [
     comment: 'YUIWKJHJKAHJKHSB'
   },
 ];
-bitcoin.proofOfWork(previousBlockHash,currentBlockData);
+
+console.log(patient);
