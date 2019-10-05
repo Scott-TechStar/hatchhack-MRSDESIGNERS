@@ -19,3 +19,11 @@ body {
 .md-form{
     margin: 2em;
 }
+
+.card{
+    margin: 2em;
+}
+
+.container{
+    display: flex;
+}
