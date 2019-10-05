@@ -24,6 +24,11 @@ body {
     margin: 2em;
 }
 
+.image-card{
+    height: 75%;
+    padding: 0.5em;
+}
+
 .container{
     display: flex;
 }
